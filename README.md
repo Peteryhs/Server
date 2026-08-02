@@ -6,4 +6,4 @@
 
 **Server Networking Setup**
 <img width="1933" height="1270" alt="image" src="https://github.com/user-attachments/assets/db80fab3-b290-4123-a630-3f1516c3ba50" />
-
+Information partially gathered by Cockpit Agent 
