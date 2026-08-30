@@ -33,13 +33,14 @@ Sun Systems is two clusters of compute working together: a home origin server an
 
 ### Evolution / Change Log
 
-From its initial form as a lone computer by my desk in 2022, it has picked up several upgrades:
+From its initial form as a lone computer by my desk in 2022, it has picked up several major upgrades:
 
 1. **2022**
    - Started as a lone computer by my desk.
 1. **2024**
    - Added the VPS.
-3. **2024**
+   - Fresh start for the Casa with Zorin 17 and a full reset.
+1. **2024**
    - Upgraded to better residential fibre internet.
 4. **2025**
    - Added the 12 TB storage expansion.
