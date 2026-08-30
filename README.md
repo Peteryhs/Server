@@ -147,7 +147,7 @@ This section covers how the services in the stack talk to each other, and how th
 
 Topology diagram:
 
-![](assets/Network Topology.png)
+![](assets/Network%20Topology.png)
 
 *orange = Cloudflare tunnels · purple = CrowdSec · red = blocked threats · grey = Tailscale overlay*
 
@@ -161,23 +161,23 @@ Cloudflare also handles the boring stuff, like certificate renewals, and throws 
 
 There is one catch: Cloudflare caps transfers at 100 MB. That is a huge problem for Nextcloud and Immich, which send and receive huge files. 
 
-![](assets/Cloudflare Tunnel Casa.png)
+![](assets/Cloudflare%20Tunnel%20Casa.png)
 
 **VPS Blind Proxy Gateway w/ CrowdSec ![](assets/route-a.svg):** the heavy services take a different road. Inbound traffic goes straight through the custom built Layer 4 blind proxy on the VPS (We have Cloudflare point our domains to the VPS's IP), which forwards it to Caddy on Casa over Tailscale. This bypasses the CF tunnel limits, as the VPS has huge bandwidths with minimal network restrictions.  
 
 This proxy also does TLS passthrough, so the connection stays encrypted end to end. Since TLS only ends at Caddy on Casa, even the VPS provider cannot read the traffic. Only Casa sees the data. 
 
-![](assets/Blind Proxy Path.png)
+![](assets/Blind%20Proxy%20Path.png)
 
 We also use CrowdSec to protect this path. The CrowdSec agent on Casa watches for malicious activity in Caddy's logs. The CrowdSec bouncer on the VPS blocks known malicious IPs, plus any the agent detects (also transfered via the Tailnet), before they reach the blind proxy. 
 
 So the services holding our precious data and memories stay safe, without Cloudflare. 
 
-![](assets/CrowdSec Loop.png)
+![](assets/CrowdSec%20Loop.png)
 
 **Cloudflare Tunnels on VPS ![](assets/route-c.svg):** similar story to Casa. The VPS only hosts lightweight services, and they are all exposed directly on the Cloudflare edge through tunnels. 
 
-![](assets/Cloudflare Tunnel VPS.png)
+![](assets/Cloudflare%20Tunnel%20VPS.png)
 
 ## 4. Storage & Redundancy
 
