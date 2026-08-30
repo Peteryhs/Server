@@ -1,4 +1,4 @@
-![](logos/ss-lockup.png)
+![](../logos/ss-lockup.png)
 
 Hybrid self hosted home lab, temp name, Sun Systems
 
@@ -58,43 +58,43 @@ Compose files for the dockerized services are located in a central folder under 
 
 Each entry shows where it runs and who built it:
 
-![](assets/home-server.svg) = on Casa (home server) · ![](assets/vps-server.svg) = on Racknerd VPS
-![](assets/badge-inhouse.svg) = built in-house · ![](assets/badge-thirdparty.svg) = third-party OSS
-![](assets/docker.svg) = Docker container · ![](assets/systemd.svg) = system-wide service · ![](assets/other.svg) = other
+![](../assets/home-server.svg) = on Casa (home server) · ![](../assets/vps-server.svg) = on Racknerd VPS
+![](../assets/badge-inhouse.svg) = built in-house · ![](../assets/badge-thirdparty.svg) = third-party OSS
+![](../assets/docker.svg) = Docker container · ![](../assets/systemd.svg) = system-wide service · ![](../assets/other.svg) = other
 
-- **[Nextcloud](https://github.com/nextcloud/server)** ![](assets/home-server.svg) ![](assets/docker.svg) ![](assets/badge-thirdparty.svg)
+- **[Nextcloud](https://github.com/nextcloud/server)** ![](../assets/home-server.svg) ![](../assets/docker.svg) ![](../assets/badge-thirdparty.svg)
 	- My choice of alternative to G-Suite: files, cloud notes, and office editing
 	- The AIO packaged version of Nextcloud is run.
 	- Containers: apache, database, redis, imaginary, collabora, notify-push, talk, whiteboard, mastercontainer
-- **[Immich](https://github.com/immich-app/immich)** ![](assets/home-server.svg) ![](assets/docker.svg) ![](assets/badge-thirdparty.svg)
+- **[Immich](https://github.com/immich-app/immich)** ![](../assets/home-server.svg) ![](../assets/docker.svg) ![](../assets/badge-thirdparty.svg)
 	- Alternative to Google Photos: photo & video library with ML-powered classification and search + much more!
 	- Containers: machine-learning, postgres, redis/valkey
-- **[Memos](https://github.com/usememos/memos)** ![](assets/home-server.svg) ![](assets/docker.svg) ![](assets/badge-thirdparty.svg)
+- **[Memos](https://github.com/usememos/memos)** ![](../assets/home-server.svg) ![](../assets/docker.svg) ![](../assets/badge-thirdparty.svg)
 	- My choice of note app: lightweight note-taking, simple and adaptable. 
 	- Runs as a single container.
-- **[Vaultwarden](https://github.com/dani-garcia/vaultwarden)** ![](assets/home-server.svg) ![](assets/docker.svg) ![](assets/badge-thirdparty.svg)
+- **[Vaultwarden](https://github.com/dani-garcia/vaultwarden)** ![](../assets/home-server.svg) ![](../assets/docker.svg) ![](../assets/badge-thirdparty.svg)
 	- Alternative to Bitwarden: password manager, works with the official Bitwarden apps, but in rust so lighter. 
 	- Runs as a single container.
-- **[Obsidian LiveSync](https://github.com/vrtmrz/obsidian-livesync)** ![](assets/home-server.svg) ![](assets/docker.svg) ![](assets/badge-thirdparty.svg)
+- **[Obsidian LiveSync](https://github.com/vrtmrz/obsidian-livesync)** ![](../assets/home-server.svg) ![](../assets/docker.svg) ![](../assets/badge-thirdparty.svg)
 	- Self hosted Obsidian Sync: syncs my Obsidian notes across devices
 	- Backed by a CouchDB database container.
 	- Containers: CouchDB
-- **[Open WebUI](https://github.com/open-webui/open-webui)** ![](assets/vps-server.svg) ![](assets/docker.svg) ![](assets/badge-thirdparty.svg)
+- **[Open WebUI](https://github.com/open-webui/open-webui)** ![](../assets/vps-server.svg) ![](../assets/docker.svg) ![](../assets/badge-thirdparty.svg)
 	- Alternative to ChatGPT: self-hosted AI chat/agent interface
 	- Runs as a single container, with models routed through New API.
-- **[New API](https://github.com/QuantumNous/new-api)** ![](assets/vps-server.svg) ![](assets/docker.svg) ![](assets/badge-thirdparty.svg)
+- **[New API](https://github.com/QuantumNous/new-api)** ![](../assets/vps-server.svg) ![](../assets/docker.svg) ![](../assets/badge-thirdparty.svg)
 	- Aggregator for different LLM APIs: API keys, model routing, and usage tracking for the AI services
 	- Runs as a single container.
-- **[Uptime Kuma](https://github.com/louislam/uptime-kuma)** ![](assets/vps-server.svg) ![](assets/docker.svg) ![](assets/badge-thirdparty.svg)
+- **[Uptime Kuma](https://github.com/louislam/uptime-kuma)** ![](../assets/vps-server.svg) ![](../assets/docker.svg) ![](../assets/badge-thirdparty.svg)
 	- Uptime monitoring and status pages, also used in Vigyl for alert for status updates
 	- Runs as a single container.
-- **[Vigyl](https://github.com/Peteryhs/Vigyl)** ![](assets/home-server.svg) ![](assets/other.svg) ![](assets/badge-inhouse.svg)
+- **[Vigyl](https://github.com/Peteryhs/Vigyl)** ![](../assets/home-server.svg) ![](../assets/other.svg) ![](../assets/badge-inhouse.svg)
 	- My own live status display: the LCD at Casa showing CPU, RAM, and container online state
 	- The display hardware sits beside Casa on a microcontroller.
-- **[Memos MCP](https://github.com/ShaoRou459/memos-mcp)** ![](assets/vps-server.svg) ![](assets/docker.svg) ![](assets/badge-inhouse.svg)
+- **[Memos MCP](https://github.com/ShaoRou459/memos-mcp)** ![](../assets/vps-server.svg) ![](../assets/docker.svg) ![](../assets/badge-inhouse.svg)
 	- MCP server: gives AI agents read/write access to my Memos db. 
 	- Runs as a single container.
-- **[CockpitAgent](https://github.com/ShaoRou459/CockpitAgent)** ![](assets/vps-server.svg) ![](assets/other.svg) ![](assets/badge-inhouse.svg)
+- **[CockpitAgent](https://github.com/ShaoRou459/CockpitAgent)** ![](../assets/vps-server.svg) ![](../assets/other.svg) ![](../assets/badge-inhouse.svg)
 	- AI Agent that lives in Cockpit to perform server management tasks.
 	- Runs as a Cockpit plugin. 
 
@@ -102,37 +102,37 @@ Each entry shows where it runs and who built it:
 
 The server fleet also hosts its own system and maintenance software:
 
-- **[Watchtower](https://github.com/containrrr/watchtower)** ![](assets/home-server.svg) ![](assets/docker.svg) ![](assets/badge-thirdparty.svg)
+- **[Watchtower](https://github.com/containrrr/watchtower)** ![](../assets/home-server.svg) ![](../assets/docker.svg) ![](../assets/badge-thirdparty.svg)
 	- Keeps all Docker images updated automatically
 	- Runs as a single container.
-- **[Cockpit](https://github.com/cockpit-project/cockpit)** ![](assets/home-server.svg) ![](assets/systemd.svg) ![](assets/badge-thirdparty.svg)
+- **[Cockpit](https://github.com/cockpit-project/cockpit)** ![](../assets/home-server.svg) ![](../assets/systemd.svg) ![](../assets/badge-thirdparty.svg)
 	- Web console for server monitoring and management, hosts Cockpit Agent
 	- Runs as a system service.
-- **[CrowdSec Agent](https://github.com/crowdsecurity/crowdsec)** ![](assets/home-server.svg) ![](assets/systemd.svg) ![](assets/badge-thirdparty.svg)
+- **[CrowdSec Agent](https://github.com/crowdsecurity/crowdsec)** ![](../assets/home-server.svg) ![](../assets/systemd.svg) ![](../assets/badge-thirdparty.svg)
 	- IP based threat detection that feeds decisions to the edge bouncer
 	- Runs as a system service.
-- **[CrowdSec Bouncer](https://github.com/crowdsecurity/crowdsec)** ![](assets/vps-server.svg) ![](assets/systemd.svg) ![](assets/badge-thirdparty.svg)
+- **[CrowdSec Bouncer](https://github.com/crowdsecurity/crowdsec)** ![](../assets/vps-server.svg) ![](../assets/systemd.svg) ![](../assets/badge-thirdparty.svg)
 	- Blocks banned IPs in nftables at the internet edge
 	- Runs as a system service.
-- **[Cloudflared](https://github.com/cloudflare/cloudflared)** ![](assets/home-server.svg) ![](assets/systemd.svg) ![](assets/badge-thirdparty.svg)
+- **[Cloudflared](https://github.com/cloudflare/cloudflared)** ![](../assets/home-server.svg) ![](../assets/systemd.svg) ![](../assets/badge-thirdparty.svg)
 	- Cloudflare Tunnel keeping Casa reachable without open ports
 	- Runs as a system service.
-- **[Cloudflared](https://github.com/cloudflare/cloudflared)** ![](assets/vps-server.svg) ![](assets/docker.svg) ![](assets/badge-thirdparty.svg)
+- **[Cloudflared](https://github.com/cloudflare/cloudflared)** ![](../assets/vps-server.svg) ![](../assets/docker.svg) ![](../assets/badge-thirdparty.svg)
 	- Same thing as above but for services on the VPS. 
 	- Runs as a container.
-- **[Caddy](https://github.com/caddyserver/caddy)** ![](assets/home-server.svg) ![](assets/systemd.svg) ![](assets/badge-thirdparty.svg)
+- **[Caddy](https://github.com/caddyserver/caddy)** ![](../assets/home-server.svg) ![](../assets/systemd.svg) ![](../assets/badge-thirdparty.svg)
 	- TLS reverse proxy in front of the services
 	- Runs as a system service.
-- **[Portainer](https://github.com/portainer/portainer)** ![](assets/vps-server.svg) ![](assets/docker.svg) ![](assets/badge-thirdparty.svg)
+- **[Portainer](https://github.com/portainer/portainer)** ![](../assets/vps-server.svg) ![](../assets/docker.svg) ![](../assets/badge-thirdparty.svg)
 	- Container management UI for both nodes
 	- Runs as a container.
-- **[Portainer Agent](https://github.com/portainer/portainer)** ![](assets/home-server.svg) ![](assets/docker.svg) ![](assets/badge-thirdparty.svg)
+- **[Portainer Agent](https://github.com/portainer/portainer)** ![](../assets/home-server.svg) ![](../assets/docker.svg) ![](../assets/badge-thirdparty.svg)
 	- Connects Casa's containers to the Portainer UI on VPS. 
 	- Runs as a container.
-- **[open-terminal](https://github.com/open-webui/open-terminal)** ![](assets/home-server.svg) ![](assets/docker.svg) ![](assets/badge-thirdparty.svg)
+- **[open-terminal](https://github.com/open-webui/open-terminal)** ![](../assets/home-server.svg) ![](../assets/docker.svg) ![](../assets/badge-thirdparty.svg)
 	- Open WebUI's terminal tool: sandboxed files, shell, and code execution for the AI
 	- Runs as a container.
-- **Blind proxy** ![](assets/vps-server.svg) ![](assets/docker.svg) ![](assets/badge-inhouse.svg)
+- **Blind proxy** ![](../assets/vps-server.svg) ![](../assets/docker.svg) ![](../assets/badge-inhouse.svg)
 	- My own custom nginx stream proxy carrying 80/443 over Tailscale to Casa
 	- Runs as a container on the VPS.
 
@@ -147,7 +147,7 @@ This section covers how the services in the stack talk to each other, and how th
 
 Topology diagram:
 
-![](assets/Network Topology.png)
+![](../assets/Network Topology.png)
 
 *orange = Cloudflare tunnels · purple = CrowdSec · red = blocked threats · grey = Tailscale overlay*
 
@@ -155,29 +155,29 @@ Topology diagram:
 
 There are 3 paths for services to reach the internet. 
 
-**Cloudflare Tunnels on Casa ![](assets/route-b.svg):** lightweight services that mostly move plain text, like the notes containers (Memos, Obsidian LiveSync), are exposed straight from the origin through Cloudflare tunnels. Deployment is simple: point a domain at a local port and the service is up. Maintenance is easier too, since my domains live on Cloudflare anyway. 
+**Cloudflare Tunnels on Casa ![](../assets/route-b.svg):** lightweight services that mostly move plain text, like the notes containers (Memos, Obsidian LiveSync), are exposed straight from the origin through Cloudflare tunnels. Deployment is simple: point a domain at a local port and the service is up. Maintenance is easier too, since my domains live on Cloudflare anyway. 
 
 Cloudflare also handles the boring stuff, like certificate renewals, and throws in antibot and analytics on the free plan. It also provides more advanced tools like Cloudflare Access, which protects the VaultWarden admin panel, so even if the master password is breached it still requires an email verification to tempter with the setup. 
 
 There is one catch: Cloudflare caps transfers at 100 MB. That is a huge problem for Nextcloud and Immich, which send and receive huge files. 
 
-![](assets/Cloudflare Tunnel Casa.png)
+![](../assets/Cloudflare Tunnel Casa.png)
 
-**VPS Blind Proxy Gateway w/ CrowdSec ![](assets/route-a.svg):** the heavy services take a different road. Inbound traffic goes straight through the custom built Layer 4 blind proxy on the VPS (We have Cloudflare point our domains to the VPS's IP), which forwards it to Caddy on Casa over Tailscale. This bypasses the CF tunnel limits, as the VPS has huge bandwidths with minimal network restrictions.  
+**VPS Blind Proxy Gateway w/ CrowdSec ![](../assets/route-a.svg):** the heavy services take a different road. Inbound traffic goes straight through the custom built Layer 4 blind proxy on the VPS (We have Cloudflare point our domains to the VPS's IP), which forwards it to Caddy on Casa over Tailscale. This bypasses the CF tunnel limits, as the VPS has huge bandwidths with minimal network restrictions.  
 
 This proxy also does TLS passthrough, so the connection stays encrypted end to end. Since TLS only ends at Caddy on Casa, even the VPS provider cannot read the traffic. Only Casa sees the data. 
 
-![](assets/Blind Proxy Path.png)
+![](../assets/Blind Proxy Path.png)
 
 We also use CrowdSec to protect this path. The CrowdSec agent on Casa watches for malicious activity in Caddy's logs. The CrowdSec bouncer on the VPS blocks known malicious IPs, plus any the agent detects (also transfered via the Tailnet), before they reach the blind proxy. 
 
 So the services holding our precious data and memories stay safe, without Cloudflare. 
 
-![](assets/CrowdSec Loop.png)
+![](../assets/CrowdSec Loop.png)
 
-**Cloudflare Tunnels on VPS ![](assets/route-c.svg):** similar story to Casa. The VPS only hosts lightweight services, and they are all exposed directly on the Cloudflare edge through tunnels. 
+**Cloudflare Tunnels on VPS ![](../assets/route-c.svg):** similar story to Casa. The VPS only hosts lightweight services, and they are all exposed directly on the Cloudflare edge through tunnels. 
 
-![](assets/Cloudflare Tunnel VPS.png)
+![](../assets/Cloudflare Tunnel VPS.png)
 
 ## 4. Storage & Redundancy
 
@@ -189,10 +189,10 @@ Disk Layouts:
 
 | Device                                        | Size   | Type | Use         | Role                                         |
 | :-------------------------------------------- | :----- | :--- | :---------- | :------------------------------------------- |
-| Seagate Ultrastar ![](assets/home-server.svg) | 10.9 T | ext4 | 3% (295G)   | **Hosts live data** (Immich, Nextcloud data) |
-| WD HDD ![](assets/home-server.svg)            | 931 G  | ext4 | 30% (256G)  | **Local backup** (borg/Vorta repos)          |
-| SanDisk SSD ![](assets/home-server.svg)       | 119 G  | ext4 | 75% (82G)   | OS + Docker + app configs                    |
-| KVM SSD Storage![](assets/vps-server.svg)     | 40 G   | ext4 | 73% (29.2G) | Hosts system + Application Data              |
+| Seagate Ultrastar ![](../assets/home-server.svg) | 10.9 T | ext4 | 3% (295G)   | **Hosts live data** (Immich, Nextcloud data) |
+| WD HDD ![](../assets/home-server.svg)            | 931 G  | ext4 | 30% (256G)  | **Local backup** (borg/Vorta repos)          |
+| SanDisk SSD ![](../assets/home-server.svg)       | 119 G  | ext4 | 75% (82G)   | OS + Docker + app configs                    |
+| KVM SSD Storage![](../assets/vps-server.svg)     | 40 G   | ext4 | 73% (29.2G) | Hosts system + Application Data              |
 
 Backup Solution:
 
@@ -277,36 +277,36 @@ A quick map of the terms used in this document.
 
 The three traffic routes, and their logos:
 
-- **VPS blind proxy gateway** ![](assets/route-a.svg): the direct road for heavy services 
-- **Cloudflare tunnel to Casa** ![](assets/route-b.svg): the road for lightweight Casa services 
-- **Cloudflare tunnel to VPS** ![](assets/route-c.svg): the road for lightweight VPS services
+- **VPS blind proxy gateway** ![](../assets/route-a.svg): the direct road for heavy services 
+- **Cloudflare tunnel to Casa** ![](../assets/route-b.svg): the road for lightweight Casa services 
+- **Cloudflare tunnel to VPS** ![](../assets/route-c.svg): the road for lightweight VPS services
 
 ### Service Summary
 
 | Service            |             On              |              Built               |         Runs as         | Backed up | Traffic path                                             |
 | :----------------- | :-------------------------: | :------------------------------: | :---------------------: | :-------: | :------------------------------------------------------- |
-| Nextcloud          | ![](assets/home-server.svg) | ![](assets/badge-thirdparty.svg) | ![](assets/docker.svg)  |    Yes    | ![](assets/route-a.svg) Blind proxy                      |
-| Immich             | ![](assets/home-server.svg) | ![](assets/badge-thirdparty.svg) | ![](assets/docker.svg)  |    Yes    | ![](assets/route-a.svg) Blind proxy                      |
-| Memos              | ![](assets/home-server.svg) | ![](assets/badge-thirdparty.svg) | ![](assets/docker.svg)  |    No     | ![](assets/route-b.svg) CF tunnel to Casa                |
-| Vaultwarden        | ![](assets/home-server.svg) | ![](assets/badge-thirdparty.svg) | ![](assets/docker.svg)  |    Yes    | ![](assets/route-b.svg) CF tunnel to Casa, behind Access |
-| Obsidian LiveSync  | ![](assets/home-server.svg) | ![](assets/badge-thirdparty.svg) | ![](assets/docker.svg)  |    No     | ![](assets/route-b.svg) CF tunnel to Casa                |
-| Vigyl              | ![](assets/home-server.svg) |  ![](assets/badge-inhouse.svg)   |  ![](assets/other.svg)  |    No     | Local (LCD display)                                      |
-| Open WebUI         | ![](assets/vps-server.svg)  | ![](assets/badge-thirdparty.svg) | ![](assets/docker.svg)  |    No     | ![](assets/route-c.svg) CF tunnel to VPS                 |
-| New API            | ![](assets/vps-server.svg)  | ![](assets/badge-thirdparty.svg) | ![](assets/docker.svg)  |    No     | ![](assets/route-c.svg) CF tunnel to VPS                 |
-| Uptime Kuma        | ![](assets/vps-server.svg)  | ![](assets/badge-thirdparty.svg) | ![](assets/docker.svg)  |    No     | ![](assets/route-c.svg) CF tunnel to VPS                 |
-| Memos MCP          | ![](assets/vps-server.svg)  |  ![](assets/badge-inhouse.svg)   | ![](assets/docker.svg)  |    No     | Internal (Tailscale to Casa)                             |
-| CockpitAgent       | ![](assets/vps-server.svg)  |  ![](assets/badge-inhouse.svg)   |  ![](assets/other.svg)  |    No     | Local (Cockpit plugin)                                   |
-| Watchtower         | ![](assets/home-server.svg) | ![](assets/badge-thirdparty.svg) | ![](assets/docker.svg)  |    No     | Local (image updates)                                    |
-| Cockpit            | ![](assets/home-server.svg) | ![](assets/badge-thirdparty.svg) | ![](assets/systemd.svg) |    No     | Local (management)                                       |
-| CrowdSec agent     | ![](assets/home-server.svg) | ![](assets/badge-thirdparty.svg) | ![](assets/systemd.svg) |    No     | Local (reads Caddy logs)                                 |
-| CrowdSec bouncer   | ![](assets/vps-server.svg)  | ![](assets/badge-thirdparty.svg) | ![](assets/systemd.svg) |    No     | Internal (Tailscale to LAPI)                             |
-| Caddy              | ![](assets/home-server.svg) | ![](assets/badge-thirdparty.svg) | ![](assets/systemd.svg) |    No     | Local (origin proxy)                                     |
-| Cloudflared (Casa) | ![](assets/home-server.svg) | ![](assets/badge-thirdparty.svg) | ![](assets/systemd.svg) |    No     | ![](assets/route-b.svg) Outbound to Cloudflare           |
-| Cloudflared (VPS)  | ![](assets/vps-server.svg)  | ![](assets/badge-thirdparty.svg) | ![](assets/docker.svg)  |    No     | ![](assets/route-c.svg) Outbound to Cloudflare           |
-| Blind proxy        | ![](assets/vps-server.svg)  |  ![](assets/badge-inhouse.svg)   | ![](assets/docker.svg)  |    No     | ![](assets/route-a.svg) The blind proxy route            |
-| Portainer          | ![](assets/vps-server.svg)  | ![](assets/badge-thirdparty.svg) | ![](assets/docker.svg)  |    No     | ![](assets/route-c.svg) CF tunnel to VPS                 |
-| Portainer Agent    | ![](assets/home-server.svg) | ![](assets/badge-thirdparty.svg) | ![](assets/docker.svg)  |    No     | Internal (Tailscale to Portainer)                        |
-| open-terminal      | ![](assets/home-server.svg) | ![](assets/badge-thirdparty.svg) | ![](assets/docker.svg)  |    No     | Internal (Tailscale from Open WebUI)                     |
+| Nextcloud          | ![](../assets/home-server.svg) | ![](../assets/badge-thirdparty.svg) | ![](../assets/docker.svg)  |    Yes    | ![](../assets/route-a.svg) Blind proxy                      |
+| Immich             | ![](../assets/home-server.svg) | ![](../assets/badge-thirdparty.svg) | ![](../assets/docker.svg)  |    Yes    | ![](../assets/route-a.svg) Blind proxy                      |
+| Memos              | ![](../assets/home-server.svg) | ![](../assets/badge-thirdparty.svg) | ![](../assets/docker.svg)  |    No     | ![](../assets/route-b.svg) CF tunnel to Casa                |
+| Vaultwarden        | ![](../assets/home-server.svg) | ![](../assets/badge-thirdparty.svg) | ![](../assets/docker.svg)  |    Yes    | ![](../assets/route-b.svg) CF tunnel to Casa, behind Access |
+| Obsidian LiveSync  | ![](../assets/home-server.svg) | ![](../assets/badge-thirdparty.svg) | ![](../assets/docker.svg)  |    No     | ![](../assets/route-b.svg) CF tunnel to Casa                |
+| Vigyl              | ![](../assets/home-server.svg) |  ![](../assets/badge-inhouse.svg)   |  ![](../assets/other.svg)  |    No     | Local (LCD display)                                      |
+| Open WebUI         | ![](../assets/vps-server.svg)  | ![](../assets/badge-thirdparty.svg) | ![](../assets/docker.svg)  |    No     | ![](../assets/route-c.svg) CF tunnel to VPS                 |
+| New API            | ![](../assets/vps-server.svg)  | ![](../assets/badge-thirdparty.svg) | ![](../assets/docker.svg)  |    No     | ![](../assets/route-c.svg) CF tunnel to VPS                 |
+| Uptime Kuma        | ![](../assets/vps-server.svg)  | ![](../assets/badge-thirdparty.svg) | ![](../assets/docker.svg)  |    No     | ![](../assets/route-c.svg) CF tunnel to VPS                 |
+| Memos MCP          | ![](../assets/vps-server.svg)  |  ![](../assets/badge-inhouse.svg)   | ![](../assets/docker.svg)  |    No     | Internal (Tailscale to Casa)                             |
+| CockpitAgent       | ![](../assets/vps-server.svg)  |  ![](../assets/badge-inhouse.svg)   |  ![](../assets/other.svg)  |    No     | Local (Cockpit plugin)                                   |
+| Watchtower         | ![](../assets/home-server.svg) | ![](../assets/badge-thirdparty.svg) | ![](../assets/docker.svg)  |    No     | Local (image updates)                                    |
+| Cockpit            | ![](../assets/home-server.svg) | ![](../assets/badge-thirdparty.svg) | ![](../assets/systemd.svg) |    No     | Local (management)                                       |
+| CrowdSec agent     | ![](../assets/home-server.svg) | ![](../assets/badge-thirdparty.svg) | ![](../assets/systemd.svg) |    No     | Local (reads Caddy logs)                                 |
+| CrowdSec bouncer   | ![](../assets/vps-server.svg)  | ![](../assets/badge-thirdparty.svg) | ![](../assets/systemd.svg) |    No     | Internal (Tailscale to LAPI)                             |
+| Caddy              | ![](../assets/home-server.svg) | ![](../assets/badge-thirdparty.svg) | ![](../assets/systemd.svg) |    No     | Local (origin proxy)                                     |
+| Cloudflared (Casa) | ![](../assets/home-server.svg) | ![](../assets/badge-thirdparty.svg) | ![](../assets/systemd.svg) |    No     | ![](../assets/route-b.svg) Outbound to Cloudflare           |
+| Cloudflared (VPS)  | ![](../assets/vps-server.svg)  | ![](../assets/badge-thirdparty.svg) | ![](../assets/docker.svg)  |    No     | ![](../assets/route-c.svg) Outbound to Cloudflare           |
+| Blind proxy        | ![](../assets/vps-server.svg)  |  ![](../assets/badge-inhouse.svg)   | ![](../assets/docker.svg)  |    No     | ![](../assets/route-a.svg) The blind proxy route            |
+| Portainer          | ![](../assets/vps-server.svg)  | ![](../assets/badge-thirdparty.svg) | ![](../assets/docker.svg)  |    No     | ![](../assets/route-c.svg) CF tunnel to VPS                 |
+| Portainer Agent    | ![](../assets/home-server.svg) | ![](../assets/badge-thirdparty.svg) | ![](../assets/docker.svg)  |    No     | Internal (Tailscale to Portainer)                        |
+| open-terminal      | ![](../assets/home-server.svg) | ![](../assets/badge-thirdparty.svg) | ![](../assets/docker.svg)  |    No     | Internal (Tailscale from Open WebUI)                     |
 
 ## Acknowledgments
 
