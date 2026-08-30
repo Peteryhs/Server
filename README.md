@@ -44,8 +44,8 @@ From its initial form as a lone computer by my desk in 2022, it has picked up se
 4. **2025**
    - Added the 12 TB storage expansion.
 5. **2026**
-   - Set up the blind proxy through Racknerd.
-   - Refreshed the container management system.
+   - Set up the blind proxy through VPS.
+   - Refreshed the container and server management system (Watchtower + Cockpit).
 
 ## 2. Functionality
 
@@ -143,7 +143,7 @@ We also get to find and use unique FOSS projects like Memos and Obsidian Live sy
 Now, onto how everything works. 
 ## 3. Network & Security
 
-This section covers how the services in the stack talk to each other, and how they reach the internet. 
+This section covers how the services in the stack talk to each other, and how they reach the internet, and how they are secured. 
 
 Topology diagram:
 
@@ -183,7 +183,7 @@ So the services holding our precious data and memories stay safe, without Cloudf
 
 The server stack has an abundance of different storage mediums, totaling ~13TB. 
 
-Although it currently uses a rather rudimentary backup system using Borg Backup, a full revamp to RAID-Z is on the horizon (ETA Q4 2026). 
+Although it currently uses a rather rudimentary backup system using Borg Backup (When the current iteration of server started in 2024, I sadly did not look far enough to see the necessity of RAID), a full revamp to RAID-Z is on the horizon. 
 
 Disk Layouts:
 
