@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+# active-device: which device(s) are connected to the Hermes gateway right now.
+# Reads established connections to the gateway port from ss, maps peer tailnet
+# IPs to device names via tailscale. Run on hermes-dedicated only.
+set -u
+GW_PORT=9119
+
+map_file=$(mktemp)
+tailscale status --json 2>/dev/null | python3 -c '
+import json, sys
+try:
+    d = json.load(sys.stdin)
+    for p in d.get("Peer", {}).values():
+        print(p["TailscaleIPs"][0], p["DNSName"].rstrip("."))
+except Exception:
+    pass
+' > "$map_file"
+
+output=$(ss -tnp 2>/dev/null | awk -v p=":$GW_PORT" '
+  $1 == "ESTAB" && $4 ~ p && $5 !~ /^127\./ { split($5, a, ":"); print a[1] }
+' | sort | uniq -c | sort -rn | while read -r count ip; do
+  name=$(awk -v ip="$ip" '$1 == ip { print $2; exit }' "$map_file")
+  [ -z "$name" ] && name="$ip"
+  name="${name%%.*}"
+  plural=""; [ "$count" -gt 1 ] && plural="s"
+  echo "$name ($count connection$plural)"
+done)
+rm -f "$map_file"
+
+if [ -z "$output" ]; then
+  echo "no desktop app connection (chat via Matrix/other?)"
+else
+  echo "$output"
+fi
