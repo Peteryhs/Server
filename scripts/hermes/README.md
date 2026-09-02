@@ -11,7 +11,7 @@ The Hermes desktop app connects to the gateway on port 9119 from the device the 
 ```
 $ active-device
 fedora (6 connections)
-book4-edge (1 connection)
+windows (1 connection)
 ```
 
 The device with the most sockets and the active data flow is the one the user is using.
@@ -23,7 +23,7 @@ Deps: bash, ss (iproute2), tailscale, python3.
 
 ## fleet-online.sh
 
-Monitor script for the device online watchdog cron job (every 15m, monitor mode, cron id 184d9e9108e1).
+Monitor script for the device online watchdog cron job (every 15m, monitor mode).
 
 Emits one stable line per device:
 
