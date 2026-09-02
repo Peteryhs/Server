@@ -18,7 +18,7 @@
 set -u
 
 PENDING_ROOT="$HOME/.hermes/pending-actions"
-DEVICES="fedora book4-edge"
+DEVICES="fedora windows"
 
 for DEV in $DEVICES; do
   # queued actions = *.md directly in the device's pending dir (not done/)
